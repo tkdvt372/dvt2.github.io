@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Xin nhỗi</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <h1 id="loveQuestion">Cậu hết giận tớ chưa?</h1><br><br>
+    <div style="margin-top: -250px" class="box">
+		<div class="heart"></div>
+	</div>
+    <input type="button" id="btnYes" value="Rồi" onclick="yesClick()" />
+    <input type="button" id="btnNo" value="Chưa" onmouseover="noHover()" />
+    <audio style="display: none" controls autoplay>
+  <source src="haha.mp3" type="audio/mpeg">
+</audio>
+  </body>
+</html>

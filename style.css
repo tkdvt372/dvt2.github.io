@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: pink;
+}
+canvas {
+  display: block;
+}
+
+#loveQuestion {
+  position: absolute;
+  left: 360px;
+  top: 230px;
+  font-size: 80px;
+}
+
+input {
+  width: 200px;
+  font-size: 30px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+#btnYes {
+  position: absolute;
+  left: 480px;
+  top: 450px;
+  background-color: #7bd806;
+  cursor: pointer;
+}
+
+#btnNo {
+  position: absolute;
+  left: 860px;
+  top: 450px;
+  background-color: #f4511e;
+  transition: 0.3s;
+}
+
+.box {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.heart {
+  position: relative;
+  margin: auto;
+  height: 170px;
+  width: 200px;
+  animation: animate 1s infinite;
+}
+
+.heart:before, .heart:after {
+  content: '';
+  position: absolute;
+  background: #d63031;
+  width: 100px;
+  height: 160px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.heart:before {
+  left: 100px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+              0 10px 10px rgba(0,0,0,0.22);
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(.8);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
